@@ -19,12 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d78b598-641d-42d0-ae50-037586a70486" name="Default Changelist" comment="Added registration form and DB connection">
-      <change afterPath="$PROJECT_DIR$/backend/database/query_functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/initialize.php" afterDir="false" />
+    <list default="true" id="0d78b598-641d-42d0-ae50-037586a70486" name="Default Changelist" comment="Added initialize.php, query_functions.php and some changes so its OOP">
+      <change afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/register_code.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/register_code.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +72,8 @@
       <updated>1597262240027</updated>
       <workItem from="1597262241080" duration="85000" />
       <workItem from="1597262364063" duration="3908000" />
-      <workItem from="1597774494356" duration="10526000" />
+      <workItem from="1597774494356" duration="10579000" />
+      <workItem from="1597786642992" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1597262382338</created>
@@ -91,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597781333445</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added initialize.php, query_functions.php and some changes so its OOP">
+      <created>1597785923360</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597785923360</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +117,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="asd" />
     <MESSAGE value="Added registration form and DB connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added registration form and DB connection" />
+    <MESSAGE value="Added initialize.php, query_functions.php and some changes so its OOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added initialize.php, query_functions.php and some changes so its OOP" />
   </component>
   <component name="WindowStateProjectService">
     <state x="670" y="429" key="#PHP" timestamp="1597262612457">
@@ -127,10 +133,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="638" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597782082683" />
-    <state x="1336" y="311" key="Vcs.Push.Dialog.v2" timestamp="1597781340673">
+    <state x="1336" y="311" key="Vcs.Push.Dialog.v2" timestamp="1597785926294">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1336" y="311" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597781340673" />
+    <state x="1336" y="311" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597785926294" />
     <state x="1151" y="634" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597785880476">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
