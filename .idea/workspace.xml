@@ -20,13 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d78b598-641d-42d0-ae50-037586a70486" name="Default Changelist" comment="asd">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stylesheets/header_footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stylesheets/register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/database/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/database/db_credentials.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/database/register_code.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/register.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mille\PhpstormProjects\phpbloggen1\backend\database" />
       <recent name="C:\Users\mille\PhpstormProjects\phpbloggen1\frontend" />
     </key>
   </component>
@@ -76,6 +77,7 @@
       <updated>1597262240027</updated>
       <workItem from="1597262241080" duration="85000" />
       <workItem from="1597262364063" duration="3908000" />
+      <workItem from="1597774494356" duration="6553000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1597262382338</created>
@@ -115,9 +117,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="862" y="529" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1597262886181" />
-    <state x="1010" y="638" key="NewPhpFileDialog" timestamp="1597263126203">
+    <state x="1010" y="638" key="NewPhpFileDialog" timestamp="1597780695140">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1010" y="638" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597263126203" />
+    <state x="1010" y="638" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597780695140" />
   </component>
 </project>
