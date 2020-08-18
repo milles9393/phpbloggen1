@@ -1,22 +1,33 @@
 <?php
-require_once('database.php');
-$fname = $lname  = $email = $password = $pwd = '';
+require_once('../../shared/header.php');
+require_once('../../shared/footer.php');
+require_once('../initialize.php');
+//$fname = $lname  = $email = $password = $pwd = '';
 
-$fname = $_POST['firstname'];
-$lname = $_POST['lastname'];
-$email = $_POST['email'];
-$pwd = $_POST['password'];
-$password = MD5($pwd);
+if(is_post_request()) {
 
-$sql = "INSERT INTO user (Firstname,Lastname,Email,Password) VALUES 
-    ('$fname','$lname','$email','$password')";
-$result = mysqli_query($conn, $sql);
-if($result)
-{
-    header("Location: ../frontend/login.php");
+//handle form values for register
+    $fname = $_POST['firstname'];
+    $lname = $_POST['lastname'];
+    $email = $_POST['email'];
+    $pwd = $_POST['password'];
+    $password = MD5($pwd);
+
+    $result = insert_user($fname, $lname, $email, $password);
+
+    header("Location: ../../frontend/login.php");
 }
 else
 {
-    echo "Error :".$sql;
+    echo "Error" ;
 }
 ?>
+
+
+
+
+
+
+
+
+
