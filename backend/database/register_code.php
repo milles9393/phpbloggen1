@@ -12,10 +12,7 @@ if(is_post_request()) {
     $email = $_POST['email'];
     $pwd = $_POST['password'];
     $password = MD5($pwd);
-
     $result = insert_user($fname, $lname, $email, $password);
-
-    header("Location: ../../frontend/login.php");
 }
 else
 {

@@ -20,11 +20,11 @@
 <form method="post" action="../backend/database/register_code.php">
     <div class="input-group">
         <label>firstname</label>
-        <input type="text" name="firstname" value="">
+        <input type="text" name="firstname" value="" required>
     </div>
     <div class="input-group">
         <label>lastname</label>
-        <input type="text" name="lastname" value="">
+        <input type="text" name="lastname" value="" required>
     </div>
     <div class="input-group">
         <label>Email</label>
