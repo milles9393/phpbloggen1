@@ -40,8 +40,14 @@
     <p>
         Already a member? <a href="login.php">Sign in</a>
     </p>
-</form>
+    <br>
 
+</form>
+        <form action = "../backend/database/login_code.php" method = "post">
+            <label>UserName  :</label><input type = "text" name = "firstname" class = "box" required /><br /><br />
+            <label>Password  :</label><input type = "password" name = "password" class = "box" required /><br/><br />
+            <input type = "submit" value = " Submit "/><br />
+        </form>
     </div>
 </div>
 </body>
