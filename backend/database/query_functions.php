@@ -39,7 +39,7 @@ function insert_user($fname, $lname, $email, $password){
 }
 
 function login_user($fname, $password){
-        global $db;
+    global $db;
 
         $sql = "SELECT id FROM user WHERE Firstname = '$fname' and Password = '$password'";
         $result = mysqli_query($db,$sql);
@@ -59,5 +59,17 @@ function login_user($fname, $password){
             echo "<script type='text/javascript'>alert('$error');</script>";
             //TODO add ERROR promt
         }
+}
+
+function list_user() {
+    global $db;
+
+    $sql = "SELECT * FROM user";
+    //$sql .= "ORDER BY position ASC";
+    $result = mysqli_query($db, $sql);
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        print_r($row);
+    }
 }
 ?>

@@ -1,5 +1,5 @@
 <?php include('../shared/header.php'); ?>
-
+<?php include('../backend/initialize.php'); ?>
 
 
 <!DOCTYPE html>
@@ -54,5 +54,8 @@
 </html>
 
 
+<?php
+    list_user();
+?>
 
 <?php include('../shared/footer.php'); ?>

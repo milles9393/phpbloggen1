@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d78b598-641d-42d0-ae50-037586a70486" name="Default Changelist" comment="tutorial notes.txt">
-      <change afterPath="$PROJECT_DIR$/backend/database/login_code.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/welcome.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/database/query_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/query_functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.php" afterDir="false" />
@@ -58,6 +56,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../bloggen" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -78,7 +77,7 @@
       <workItem from="1597774494356" duration="10579000" />
       <workItem from="1597786642992" duration="55000" />
       <workItem from="1597943359629" duration="10688000" />
-      <workItem from="1598083715596" duration="6335000" />
+      <workItem from="1598083715596" duration="15994000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1597262382338</created>
