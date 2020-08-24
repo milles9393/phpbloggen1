@@ -53,9 +53,29 @@
 </body>
 </html>
 
-
 <?php
-    list_user();
+    //list_user();
 ?>
 
+<?php $posts = list_posts(); ?>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/posts.css">
+</head>
+
+<?php foreach ($posts as $post): ?>
+    <div class="post" style="margin-left: 0px;">
+            <div class="post_info">
+                <h3><?php echo $post['title'] ?></h3>
+                <p><?php echo $post['created_at'] ?></p>
+                </div>
+            </div>
+    </div>
+<?php endforeach ?>
+
 <?php include('../shared/footer.php'); ?>
+
+
+
+
+

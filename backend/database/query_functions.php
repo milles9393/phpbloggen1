@@ -61,15 +61,40 @@ function login_user($fname, $password){
         }
 }
 
+
+
+
 function list_user() {
     global $db;
 
     $sql = "SELECT * FROM user";
     //$sql .= "ORDER BY position ASC";
     $result = mysqli_query($db, $sql);
+    $users = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-    while ($row = mysqli_fetch_assoc($result)) {
-        print_r($row);
-    }
+    return $users;
+//    while ($row = mysqli_fetch_assoc($result)) {
+//       print_r($row);
+//    }
 }
+
+function list_posts() {
+    global $db;
+
+    $sql = "SELECT * FROM posts";
+    //$sql .= "ORDER BY position ASC";
+    $result = mysqli_query($db, $sql);
+    $posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    return $posts;
+//    while ($row = mysqli_fetch_assoc($result)) {
+//       print_r($row);
+//    }
+}
+
+
+
+
 ?>
+
+
