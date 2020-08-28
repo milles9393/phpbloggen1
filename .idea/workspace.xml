@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0d78b598-641d-42d0-ae50-037586a70486" name="Default Changelist" comment="tutorial notes.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/header_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/header_footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,7 @@
       <workItem from="1597943359629" duration="10688000" />
       <workItem from="1598083715596" duration="16393000" />
       <workItem from="1598292932007" duration="7824000" />
-      <workItem from="1598637439752" duration="894000" />
+      <workItem from="1598637439752" duration="2377000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1597262382338</created>
