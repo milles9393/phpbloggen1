@@ -6,6 +6,8 @@
 <html>
 <head>
     <title>Registration system PHP and MySQL</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/posts.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/header_footer.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/register.css">
 </head>
 <body>
@@ -59,12 +61,8 @@
 
 <?php $posts = list_posts(); ?>
 
-<head>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/posts.css">
-</head>
-
 <?php foreach ($posts as $post): ?>
-    <div class="post" style="margin-left: 0px;">
+    <div class="post" style="margin-left: 100px;">
             <div class="post_info">
                 <h3><?php echo $post['title'] ?></h3>
                 <p><?php echo $post['created_at'] ?></p>
