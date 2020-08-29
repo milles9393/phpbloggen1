@@ -1,2 +1,2 @@
 # phpbloggen1
-phpblogg
+phpbloggen
