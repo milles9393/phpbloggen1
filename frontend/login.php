@@ -1,11 +1,7 @@
-<?php
+<?php include('../shared/header.php'); ?>
+<?php include('../backend/initialize.php'); ?>
 
-
-
-
-?>
 <!doctype html>
-
 <html lang="en">
 <head>
     <title>GBI </title>
@@ -18,3 +14,5 @@
 
 </body>
 </html>
+
+<?php include('../shared/footer.php'); ?>

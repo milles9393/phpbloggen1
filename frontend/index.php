@@ -1,7 +1,6 @@
 <?php include('../shared/header.php'); ?>
 <?php include('../backend/initialize.php'); ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,10 +47,12 @@
         <form action = "../backend/database/login_code.php" method = "post">
             <label>UserName  :</label><input type = "text" name = "firstname" class = "box" required /><br /><br />
             <label>Password  :</label><input type = "password" name = "password" class = "box" required /><br/><br />
-            <input type = "submit" value = " Submit "/><br />
+            <input type = "submit" value = "Login"/><br />
         </form>
     </div>
 </div>
+
+
 </body>
 </html>
 

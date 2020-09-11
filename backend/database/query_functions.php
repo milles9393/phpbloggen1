@@ -19,7 +19,6 @@ function insert_user($fname, $lname, $email, $password){
         //header("Location: ../../frontend/index.php");
         //TODO add ERROR promt
 
-
     } else if (mysqli_num_rows($res_e) > 0) {
         $email_error = "Sorry... email already taken";
     } else {
@@ -61,8 +60,23 @@ function login_user($fname, $password){
         }
 }
 
+function insert_post($user_id2, $title2, $body2){
+    global $db;
 
+    $sql = "INSERT INTO posts ";
+    $sql .= "(user_id, title, body) ";
+    $sql .= "VALUES (";
+    $sql .= "'" . $user_id2 . "',";
+    $sql .= "'" . $title2 . "',";
+    $sql .= "'" . $body2 . "'";
+    $sql .= ")";
 
+    if (mysqli_query($db, $sql)) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($db);
+    }
+}
 
 function list_user() {
     global $db;
@@ -87,6 +101,7 @@ function list_posts() {
     $posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     return $posts;
+
 //    while ($row = mysqli_fetch_assoc($result)) {
 //       print_r($row);
 //    }
