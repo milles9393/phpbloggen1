@@ -11,7 +11,7 @@
 <h1>Welcome <?php echo "asdasd" ?></h1>
 <h2><a href = "logout.php">Sign Out</a></h2>
 
-<form method="post" action="../backend/database/upload_post.php" enctype="multipart/form-data">
+<form method="post" action="../backend/database/upload_code.php" enctype="multipart/form-data">
         <label>user_id</label>
         <input type="text" name="user_id" value="" required>
         <br>
@@ -26,9 +26,7 @@
 
     Select Image File to Upload:
     <input type="file" name="file">
-    <input type="submit" name="submit" value="Upload">
-
-    <button type="submit">Register</button>
+    <input type="submit" name="submit">
 
     <p>
         Already a member? <a href="login.php">Sign in</a>

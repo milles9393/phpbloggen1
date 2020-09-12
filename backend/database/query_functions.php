@@ -60,14 +60,15 @@ function login_user($fname, $password){
         }
 }
 
-function insert_post($user_id2, $title2, $body2){
+function insert_post($user_id2, $title2, $image2, $body2){
     global $db;
 
     $sql = "INSERT INTO posts ";
-    $sql .= "(user_id, title, body) ";
+    $sql .= "(user_id, title, image, body) ";
     $sql .= "VALUES (";
     $sql .= "'" . $user_id2 . "',";
     $sql .= "'" . $title2 . "',";
+    $sql .= "'" . $image2 . "',";
     $sql .= "'" . $body2 . "'";
     $sql .= ")";
 

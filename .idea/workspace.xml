@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d78b598-641d-42d0-ae50-037586a70486" name="Default Changelist" comment="tutorial notes.txt">
-      <change afterPath="$PROJECT_DIR$/backend/database/upload_post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/database/query_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/query_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/upload_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/upload_code.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/welcome.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +85,7 @@
       <workItem from="1599850358814" duration="2000" />
       <workItem from="1599851301659" duration="1266000" />
       <workItem from="1599852749140" duration="600000" />
-      <workItem from="1599853442901" duration="9464000" />
+      <workItem from="1599853442901" duration="15264000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1597262382338</created>
@@ -166,9 +164,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1336" y="311" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597956970775" />
-    <state x="1151" y="634" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597785880476">
+    <state x="1151" y="634" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599901304873">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1151" y="634" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597785880476" />
+    <state x="1151" y="634" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1599901304873" />
   </component>
 </project>
