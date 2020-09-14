@@ -20,6 +20,14 @@ if(is_post_request()) {
     echo "<br>", realpath($tname);
     echo "<br>";
     echo $uploads_dir . '/' . $pname;
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+
+
+    echo print_r($_FILES['file_upload']);
+
 }
 else
 {
