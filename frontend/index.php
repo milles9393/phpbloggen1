@@ -57,7 +57,7 @@
 </html>
 
 <?php
-    //list_user();
+    list_images();
 ?>
 
 <?php $posts = list_posts(); ?>
@@ -73,8 +73,6 @@
 <?php endforeach ?>
 
 <?php include('../shared/footer.php'); ?>
-
-
 
 
 

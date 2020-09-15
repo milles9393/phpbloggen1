@@ -79,18 +79,25 @@ function insert_post($user_id2, $title2, $image2, $body2){
     }
 }
 
-function list_user() {
+function list_images()
+{
     global $db;
+    // Get images from the database
+    $query = $db->query("SELECT * FROM image");
 
-    $sql = "SELECT * FROM user";
-    //$sql .= "ORDER BY position ASC";
-    $result = mysqli_query($db, $sql);
-    $users = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    //  $result = $db->query($query);
 
-    return $users;
-//    while ($row = mysqli_fetch_assoc($result)) {
-//       print_r($row);
+    //  if (!$result) {
+    //      trigger_error('Invalid query: ' . $db->error);
 //    }
+
+    if ($query->num_rows > 0) {
+        while ($row = $query->fetch_assoc()) {
+            echo "<h2>{$row['filename']}</h2>";
+            echo "<h2>{$row['created']}</h2>";
+            echo "<img src='{$row['filename']}' width='40%' height='40%'>";
+        }
+    }
 }
 
 function list_posts() {
@@ -111,6 +118,7 @@ function list_posts() {
 
 
 
-?>
 
+
+?>
 

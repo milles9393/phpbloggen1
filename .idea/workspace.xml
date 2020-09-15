@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0d78b598-641d-42d0-ae50-037586a70486" name="Default Changelist" comment="tutorial notes.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/query_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/query_functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/database/upload_code.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/upload_code.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/welcome.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +88,8 @@
       <workItem from="1599852749140" duration="600000" />
       <workItem from="1599853442901" duration="15288000" />
       <workItem from="1599907680701" duration="565000" />
-      <workItem from="1600114094297" duration="1714000" />
+      <workItem from="1600114094297" duration="2738000" />
+      <workItem from="1600182101045" duration="14753000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1597262382338</created>

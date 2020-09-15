@@ -1,36 +1,39 @@
 <?php
 require_once('../initialize.php');
-//session_start();
-
-if(is_post_request()) {
-
-//handle form values for register
-    $user_id2 = $_POST['user_id'];
-    $title2 = $_POST['title'];
-    $body2 = $_POST['body'];
-    $pname = rand(1000,10000)."-".$_FILES["file"]["name"];
-    #temporary file name to store file
-    $tname = $_FILES["file"]["tmp_name"];
-    #upload directory path
-    $uploads_dir = 'images';
-    #TO move the uploaded file to specific location
-    move_uploaded_file($tname, $uploads_dir.'/'.$pname);
-    echo "lololol", $uploads_dir . '/' . $pname;
-    $result = insert_post($user_id2, $title2, $pname, $body2);
-    echo "<br>", realpath($tname);
-    echo "<br>";
-    echo $uploads_dir . '/' . $pname;
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
+global $db;
 
 
-    echo print_r($_FILES['file_upload']);
+$statusMsg = '';
 
+// File upload path
+
+$postid = $_POST['postid'];
+
+$targetDir = "C:/xampp/images/";
+$fileName = basename($_FILES["file"]["name"]);
+$targetFilePath = $targetDir . $fileName;
+$fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
+
+if (isset($_POST["submit"]) && !empty($_FILES["file"]["name"])) {
+    // Allow certain file formats
+    $allowTypes = array('jpg', 'png', 'jpeg', 'gif', 'pdf');
+    if (in_array($fileType, $allowTypes)) {
+        // Upload file to server
+        if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)) {
+            // Insert image file name into database
+            $insert = $db->query("INSERT into image (filename, created, postid) VALUES ('" . $fileName . "', NOW(),'{$postid}')");
+            if ($insert) {
+                $statusMsg = "The file " . $fileName . " has been uploaded successfully.";
+            } else {
+                $statusMsg = "File upload failed, please try again.";
+            }
+        }
+    }
 }
-else
-{
-    echo "Error" ;
-}
+
+
+
+// Display status message
+echo $statusMsg;
+
 ?>
