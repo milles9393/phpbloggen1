@@ -9,31 +9,36 @@ $statusMsg = '';
 
 $postid = $_POST['postid'];
 
-$targetDir = "../../uploads/";
-//$targetDir = "C:/xampp/images/";
-$fileName = basename($_FILES["file"]["name"]);
-$targetFilePath = $targetDir . $fileName;
-$fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
+$image_new_name = "";
+if(isset($_FILES['file'])){
+    $user_image = $_FILES['file'];
 
-if (isset($_POST["submit"]) && !empty($_FILES["file"]["name"])) {
-    // Allow certain file formats
-    $allowTypes = array('jpg', 'png', 'jpeg', 'gif', 'pdf');
-    if (in_array($fileType, $allowTypes)) {
-        // Upload file to server
-        if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)) {
-            // Insert image file name into database
-            $insert = $db->query("INSERT into image (filename, created, postid) VALUES ('" . $fileName . "', NOW(),'{$postid}')");
-            if ($insert) {
-                $statusMsg = "The file " . $fileName . " has been uploaded successfully.";
-            } else {
-                $statusMsg = "File upload failed, please try again.";
-            }
+    $extension_array = explode(".", $user_image['name']);
+    $extension = end($extension_array);
+
+    $image_new_name = uniqid(true).".".$extension;
+    $destination = "../../uploads/$image_new_name";
+
+    $allowed_ext = ['jpg', 'jpeg', 'png', 'gif'];
+
+    if(in_array($extension, $allowed_ext)){
+        if($user_image['size'] <= 5000000){
+            move_uploaded_file($user_image['tmp_name'], $destination);
+        }else{
+            exit("Max size 50MB");
         }
+    }else{
+        exit("Forbidden extension!");
     }
+
 }
 
-
-
+$insert = $db->query("INSERT into image (filename, created, postid) VALUES ('$image_new_name', NOW(),'$postid')");
+if($insert){
+    $statusMsg ="Successful upload";
+}else{
+    $statusMsg = "Failed upload";
+}
 // Display status message
 echo $statusMsg;
 

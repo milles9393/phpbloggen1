@@ -85,17 +85,14 @@ function list_images()
     // Get images from the database
     $query = $db->query("SELECT * FROM image");
 
-    //  $result = $db->query($query);
-
-    //  if (!$result) {
-    //      trigger_error('Invalid query: ' . $db->error);
-//    }
-
     if ($query->num_rows > 0) {
         while ($row = $query->fetch_assoc()) {
+            $temp_filename = $row['filename'];
+            echo "<div>";
             echo "<h2>{$row['filename']}</h2>";
             echo "<h2>{$row['created']}</h2>";
-            echo "<img src='{$row['filename']}' width='40%' height='40%'>";
+            echo "<img src=\"../uploads/$temp_filename\" width=\"40%\" height=\"40%\">";
+            echo "</div>";
         }
     }
 }
@@ -104,19 +101,11 @@ function list_posts() {
     global $db;
 
     $sql = "SELECT * FROM posts";
-    //$sql .= "ORDER BY position ASC";
     $result = mysqli_query($db, $sql);
     $posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     return $posts;
-
-//    while ($row = mysqli_fetch_assoc($result)) {
-//       print_r($row);
-//    }
 }
-
-
-
 
 
 
